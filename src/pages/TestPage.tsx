@@ -1,19 +1,17 @@
 import { useState } from "react";
+import { TestComponent1 } from "../components/useContextTest/TestComponent1";
 
 import { TestComponent2 } from "../components/useContextTest/TestComponent2";
 import { TestComponent3 } from "../components/useContextTest/TestComponent3";
-import { TestContext } from "../context/TestContext";
+import { TestProvider } from "../components/useContextTest/TestProvider";
 
 export const TestPage = () => {
-  const [text, setText] = useState("");
-
-  console.log("test page rerendered");
   return (
-    <>
-      <TestContext.Provider value={{ text, setText }}>
+    <TestProvider>
+      <>
         <TestComponent2 />
         <TestComponent3 />
-      </TestContext.Provider>
-    </>
+      </>
+    </TestProvider>
   );
 };
