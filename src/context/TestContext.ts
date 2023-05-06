@@ -1,11 +1,17 @@
 import { createContext, Dispatch, SetStateAction } from "react";
 
-interface ContextType {
+interface TestContextType {
   text: string;
+}
+
+interface SetTestContextType {
   setText: Dispatch<SetStateAction<string>>;
 }
 
-export const TestContext = createContext<ContextType>({
+export const TestContext = createContext<TestContextType>({
   text: "",
+});
+
+export const SetTestContext = createContext<SetTestContextType>({
   setText: () => {},
 });

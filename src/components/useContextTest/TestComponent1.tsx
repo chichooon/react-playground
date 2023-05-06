@@ -1,9 +1,10 @@
-import { ChangeEvent, useCallback, useContext } from "react";
+import { ChangeEvent, useCallback, useContext, useEffect } from "react";
 
-import { TestContext } from "../../context/TestContext";
+import { SetTestContext, TestContext } from "../../context/TestContext";
 
 export const TestComponent1 = () => {
-  const { text, setText } = useContext(TestContext);
+  const { text } = useContext(TestContext);
+  const { setText } = useContext(SetTestContext);
 
   const handleChange = useCallback(
     (e: ChangeEvent<HTMLInputElement>) => {
