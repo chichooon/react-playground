@@ -10,7 +10,59 @@ export const SnapTestPage = () => {
         justifyContent: "center",
       }}>
       <h1>snap test</h1>
-      <div style={{ height: 480, width: 240, border: "1px solid black" }}></div>
+      <div
+        style={{
+          height: 240,
+          border: "1px solid black",
+          padding: "20px",
+          overflow: "scroll",
+          scrollSnapType: "block mandatory",
+        }}>
+        <div
+          style={{
+            width: 200,
+            height: 200,
+            marginBottom: 10,
+            color: "white",
+            backgroundColor: "green",
+            scrollSnapAlign: "start",
+          }}>
+          Box 1
+        </div>
+        <div
+          style={{
+            width: 200,
+            height: 200,
+            marginBottom: 10,
+            color: "white",
+            backgroundColor: "black",
+            scrollSnapAlign: "start",
+          }}>
+          Box 2
+        </div>
+        <div
+          style={{
+            width: 200,
+            height: 200,
+            marginBottom: 10,
+            color: "white",
+            backgroundColor: "magenta",
+            scrollSnapAlign: "start",
+          }}>
+          Box 3
+        </div>
+        <div
+          style={{
+            width: 200,
+            height: 200,
+            marginBottom: 10,
+            color: "white",
+            backgroundColor: "blue",
+            scrollSnapAlign: "start",
+          }}>
+          Box 4
+        </div>
+      </div>
     </div>
   );
 };

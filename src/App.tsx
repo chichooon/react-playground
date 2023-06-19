@@ -1,4 +1,4 @@
-import { TestPage } from "./pages/TestPage";
+// import { TestPage } from "./pages/TestPage";
 import "./App.css";
 import { SnapTestPage } from "./pages/SnapTestPage";
 
