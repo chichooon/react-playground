@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div">
+      <button id="button">버튼</button>
+    </div>
+  </body>
+  <script>
+    const div = document.getElementById("div");
+    const btn = document.getElementById("button");
+
+    function handleClickCaptured(where) {
+      return (e) => {
+        console.log("captured: " + where);
+      };
+    }
+    function handleClickBubbled(where) {
+      return (e) => {
+        console.log("bubbled: " + where);
+      };
+    }
+
+    window.addEventListener("click", handleClickCaptured("window"), {
+      capture: true,
+    });
+    window.addEventListener("click", handleClickBubbled("window"));
+    document.addEventListener("click", handleClickCaptured("document"), {
+      capture: true,
+    });
+    document.addEventListener("click", handleClickBubbled("document"));
+    document.body.addEventListener("click", handleClickCaptured("body"), {
+      capture: true,
+    });
+    document.body.addEventListener("click", handleClickBubbled("body"));
+    div.addEventListener("click", handleClickCaptured("div"), {
+      capture: true,
+    });
+    div.addEventListener("click", handleClickBubbled("div"));
+    button.addEventListener("click", handleClickCaptured("button"), {
+      capture: true,
+    });
+    button.addEventListener("click", handleClickBubbled("button"));
+  </script>
+</html>
