@@ -1,5 +1,6 @@
 // import { TestPage } from "./pages/TestPage";
 import "./App.css";
+import { CallbackTestPage } from "./pages/CallbackTestPage";
 import { MemoTestPage } from "./pages/MemoTestPage";
 import { SnapTestPage } from "./pages/SnapTestPage";
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <TestPage /> */}
       {/* <SnapTestPage /> */}
-      <MemoTestPage />
+      {/* <MemoTestPage /> */}
+      <CallbackTestPage />
     </div>
   );
 }
