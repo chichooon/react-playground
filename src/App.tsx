@@ -1,8 +1,9 @@
 // import { TestPage } from "./pages/TestPage";
 import "./App.css";
 import { CallbackTestPage } from "./pages/CallbackTestPage";
-import { MemoTestPage } from "./pages/MemoTestPage";
-import { SnapTestPage } from "./pages/SnapTestPage";
+import { RecoilPage } from "./pages/RecoilPage";
+// import { MemoTestPage } from "./pages/MemoTestPage";
+// import { SnapTestPage } from "./pages/SnapTestPage";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <TestPage /> */}
       {/* <SnapTestPage /> */}
       {/* <MemoTestPage /> */}
-      <CallbackTestPage />
+      {/* <CallbackTestPage /> */}
+      <RecoilPage />
     </div>
   );
 }

@@ -1,15 +1,6 @@
 function foo() {
-  console.log(this);
+  this.value = 2;
 }
 
-const class1 = {
-  value: 1,
-  func: foo,
-};
-
-const class2 = {
-  value: 2,
-};
-
-const bar = class1.func.bind(class2);
-bar();
+const obj = new foo();
+console.log(obj.value);
