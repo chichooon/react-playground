@@ -1,5 +1,5 @@
 import { useSetRecoilState } from "recoil";
-import { testState } from "../../atoms/testState";
+import { testState } from "../../states/atoms/testState";
 
 export const RecoilTest1 = () => {
   const setCount = useSetRecoilState(testState);
