@@ -1,7 +1,8 @@
 // import { TestPage } from "./pages/TestPage";
 import "./App.css";
-import { LazyTestPage } from "./pages/LazyTestPage";
-import { RecoilRerenderPage } from "./pages/RecoilRerenderPage";
+// import { LazyTestPage } from "./pages/LazyTestPage";
+import { ReactQuillTestPage } from "./pages/ReactQuillTestPage";
+// import { RecoilRerenderPage } from "./pages/RecoilRerenderPage";
 // import { CallbackTestPage } from "./pages/CallbackTestPage";
 // import { RecoilPage } from "./pages/RecoilPage";
 // import { MemoTestPage } from "./pages/MemoTestPage";
@@ -15,7 +16,8 @@ function App() {
       {/* <CallbackTestPage /> */}
       {/* <RecoilPage /> */}
       {/* <LazyTestPage /> */}
-      <RecoilRerenderPage />
+      {/* <RecoilRerenderPage /> */}
+      <ReactQuillTestPage />
     </div>
   );
 }
