@@ -5,7 +5,6 @@ import {
   Page,
   Font,
   StyleSheet,
-  PDFViewer,
 } from "@react-pdf/renderer";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
 const MyDocument = ({ data }: any) => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <Html>{data}</Html>
+      <Html>{`<div style='color: blue'>hihi</div>`}</Html>
     </Page>
   </Document>
 );
@@ -82,10 +81,6 @@ export const ReactQuillTestPage = () => {
           />
         )}
       </PDFDownloadLink>
-      <br />
-      <PDFViewer>
-        <MyDocument data={contents} />
-      </PDFViewer>
     </div>
   );
 };
