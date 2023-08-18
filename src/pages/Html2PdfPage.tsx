@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { makePDF } from "../utilities/makePDF";
+import { makeJsPDF } from "../utilities/makeJsPDF";
 
 export const Html2PdfPage = () => {
   const [contents, setContents] = useState("");
@@ -13,7 +14,7 @@ export const Html2PdfPage = () => {
   }
 
   function handleClick() {
-    makePDF(ref);
+    makeJsPDF();
   }
 
   return (
