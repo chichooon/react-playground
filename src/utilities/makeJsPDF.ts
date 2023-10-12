@@ -20,6 +20,7 @@ export const makeJsPDF = async () => {
   pdf.text(data.phone, 120, 20);
   pdf.text(data.email, 120, 30);
   pdf.link(120, 40, 20, 10, { url: data.github });
+  pdf.line(120, 40, 140, 40);
 
   window.open(pdf.output("bloburl")); // open PDF in new tab
 };

@@ -5,6 +5,8 @@ import {
   Page,
   Font,
   StyleSheet,
+  View,
+  Text,
 } from "@react-pdf/renderer";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -14,6 +16,7 @@ const styles = StyleSheet.create({
   page: {
     flexDirection: "row",
     backgroundColor: "#ffffff",
+    fontFamily: "Nanum Gothic",
   },
   section: {
     marginBottom: 10,
@@ -28,7 +31,9 @@ const styles = StyleSheet.create({
 const MyDocument = ({ data }: any) => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <Html>{`<div style='color: blue'>hihi</div>`}</Html>
+      <View>
+        <Text>안녕하세용</Text>
+      </View>
     </Page>
   </Document>
 );
@@ -81,6 +86,7 @@ export const ReactQuillTestPage = () => {
           />
         )}
       </PDFDownloadLink>
+      <div dangerouslySetInnerHTML={{ __html: contents }} />
     </div>
   );
 };

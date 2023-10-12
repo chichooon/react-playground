@@ -2,7 +2,7 @@
 import "./App.css";
 import { Html2PdfPage } from "./pages/Html2PdfPage";
 // import { LazyTestPage } from "./pages/LazyTestPage";
-// import { ReactQuillTestPage } from "./pages/ReactQuillTestPage";
+import { ReactQuillTestPage } from "./pages/ReactQuillTestPage";
 // import { RecoilRerenderPage } from "./pages/RecoilRerenderPage";
 // import { CallbackTestPage } from "./pages/CallbackTestPage";
 // import { RecoilPage } from "./pages/RecoilPage";
@@ -18,8 +18,8 @@ function App() {
       {/* <RecoilPage /> */}
       {/* <LazyTestPage /> */}
       {/* <RecoilRerenderPage /> */}
-      {/* <ReactQuillTestPage /> */}
-      <Html2PdfPage />
+      <ReactQuillTestPage />
+      {/* <Html2PdfPage /> */}
     </div>
   );
 }
