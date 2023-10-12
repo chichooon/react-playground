@@ -1,6 +1,6 @@
 // import { TestPage } from "./pages/TestPage";
 import "./App.css";
-import { UseRenderPage } from "./pages/UseRenderPage";
+import { UseRenderPage } from "./pages/UseReducerPage";
 // import { RecoilRerenderPage } from "./pages/RecoilRerenderPage";
 // import { CallbackTestPage } from "./pages/CallbackTestPage";
 // import { RecoilPage } from "./pages/RecoilPage";
